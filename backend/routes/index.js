@@ -9,7 +9,7 @@ router.get("/api/csrf/restore", (req, res) => {
     'XSRF-Token': csrfToken
   });
 
-  console.log(res.json(req.body))
+  console.log(res.json(res.body))
 });
 
 const apiRouter = require('./api');
